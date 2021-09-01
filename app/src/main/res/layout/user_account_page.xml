@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context=".UserAccountPage">
+
+    <LinearLayout
+        android:id="@+id/signIn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivLogLogo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="55dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon" />
+
+        <ImageView
+            android:id="@+id/ivSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="Sign in text on registration activity"
+            android:src="@drawable/sign_in" />
+
+        <AutoCompleteTextView
+            android:id="@+id/phonLogin_box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rect"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="10dp"
+            android:hint="@string/emailReg"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnsignin_gradient"
+            android:text="@string/sign_inLog"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/signIn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/signup_redirect"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signUp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/fNameCrt_box"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Enter your First Name"-->
+        <!--            android:inputType="textPersonName" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/lNameCrt_box"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Enter Your Last Name"-->
+        <!--            android:inputType="textPersonName" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/phoneCrt_box"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Submit Your Phone Number"-->
+        <!--            android:inputType="phone" />-->
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/adressCrt_box"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Enter Your Home Address"-->
+        <!--            android:inputType="textPersonName" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/crt_btn"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--            android:text="Submit" />-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivRegLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="55dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon" />
+
+
+                <ImageView
+                    android:id="@+id/ivJoinUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/joinus_text" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/fNameCRT_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_rect"
+                    android:drawableStart="@drawable/icon_person"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/usernameReg"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/phoneCRT_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_rect"
+                    android:drawableStart="@drawable/icon_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/emailReg"
+                    android:inputType="phone"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/addressCRT_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_rect"
+                    android:drawableStart="@drawable/icon_home"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/passwordReg"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/CRTbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btnsignup_gradient"
+                    android:text="@string/sign_upReg"
+                    android:textColor="#FFFFFF" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/alreadyMember_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/signin_redirect"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

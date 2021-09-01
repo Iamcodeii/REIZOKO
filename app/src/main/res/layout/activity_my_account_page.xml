@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@mipmap/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="170dp" android:layout_marginStart="50dp" android:layout_marginEnd="50dp">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageView9" android:layout_width="170dp" android:layout_height="50dp" app:srcCompat="@drawable/review_info"/>
+                    <AutoCompleteTextView android:textSize="15sp" android:textColor="@color/white" android:textColorHint="@color/gray" android:id="@+id/nameUpdt_box" android:background="@drawable/rounded_rect" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="10dp" android:hint="@string/usernameReg" android:drawableLeft="@drawable/icon_person" android:drawablePadding="10dp" android:drawableStart="@drawable/icon_person" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    <AutoCompleteTextView android:textSize="15sp" android:textColor="@color/white" android:textColorHint="@color/gray" android:id="@+id/phoneUpdt_box" android:background="@drawable/rounded_rect" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="10dp" android:hint="@string/emailReg" android:editable="false" android:drawablePadding="10dp" android:inputType="phone" android:drawableStart="@drawable/icon_phone" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    <AutoCompleteTextView android:textSize="15sp" android:textColor="@color/white" android:textColorHint="@color/gray" android:id="@+id/addressUpdt_box" android:background="@drawable/rounded_rect" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginBottom="10dp" android:hint="@string/passwordReg" android:drawablePadding="10dp" android:inputType="text" android:drawableStart="@drawable/icon_home" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    <Button android:textColor="#ffffff" android:id="@+id/Updt_btn" android:background="@drawable/btnsignin_gradient" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="UPDATE"/>
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="bottom" android:id="@+id/logout_btn" android:background="@drawable/btnsignup_gradient" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="60dp"  >
+                    <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="LOGOUT" android:fontFamily="@font/amita_bold"/>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

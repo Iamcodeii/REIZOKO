@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:duplicateParentState="true"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btm_nvigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/subMain_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/search_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <fragment
+                        android:id="@+id/fragment2"
+                        android:name="com.androiddevproject.foodorderingapp.search_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:layout="@layout/search_fragment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_frgmnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <fragment
+                        android:name="com.androiddevproject.foodorderingapp.home_frgmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        tools:layout="@layout/home_frgmnt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/categ_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <fragment
+                        android:id="@+id/fragment3"
+                        android:name="com.androiddevproject.foodorderingapp.categ_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:layout="@layout/categ_fragment" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offline_frgmnt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/try_again_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/about_btns_bg"
+                    android:fontFamily="@font/aclonica"
+                    android:text="TRY AGAIN!"
+                    android:textColor="#FFCC00"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/shadow_btm" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="center"
+                    android:text="No Internet Connection"
+                    android:textColor="#4CAF50"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/sidebar_gradient"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:translationX="-330dp"
+            android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/myOrders_btn"
+                android:layout_width="match_parent"
+                android:elevation="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btnsignup_gradient"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/active_order_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:text="My Orders"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/myAccount_btn"
+                android:layout_width="match_parent"
+                android:elevation="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btnsignup_gradient"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/active_person_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:text="My Account"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/orderByPhone_btn"
+                android:layout_width="match_parent"
+                android:elevation="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btnsignup_gradient"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/active_phone_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="17sp"
+                    android:text="Order by Phone"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aclonica"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btm_nvigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#000000"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.androiddevproject.foodorderingapp.btm_nvigtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/btm_nvigtion" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

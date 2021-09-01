@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardElevation="1dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true" app:contentPadding="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="23sp" android:id="@+id/orderProductName_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:text="TextView" android:fontFamily="monospace"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="23sp" android:textStyle="bold" android:id="@+id/orderProductPrice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="TextView" android:fontFamily="monospace"/>
+                <TextView android:textSize="23sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@+id/orderProductQty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:fontFamily="monospace"/>
+                <TextView android:textSize="23sp" android:textStyle="bold" android:layout_gravity="right" android:id="@+id/orderProductPriceTotal_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="TextView" android:fontFamily="monospace"/>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

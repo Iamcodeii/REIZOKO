@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">REIZOKO</string>
+    <string name="usernameReg">Name</string>
+    <string name="emailReg">Phone Number</string>
+    <string name="passwordReg">Home Address</string>
+    <string name="sign_upReg">Sign up</string>
+    <string name="sign_inLog">Sign in</string>
+    <string name="signin_redirect">Already a member? Sign in!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="signup_redirect">Don\'t have an account? Register here!</string>
+    <string name="baby_kids"><![CDATA[BABY & KIDS]]></string>
+
+    <string name="map_key">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+</resources>
