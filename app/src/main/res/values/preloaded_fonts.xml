@@ -5,5 +5,7 @@
         <item>@font/playfair_display</item>
         <item>@font/playfair_display_black</item>
         <item>@font/playfair_display_bold</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_black</item>
     </array>
 </resources>

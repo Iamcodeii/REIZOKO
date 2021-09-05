@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DonateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Donate Food"
+                android:textColor="@color/colorAccent"
+                android:textSize="37sp" />
+
+            <Spinner
+                android:id="@+id/spinner_addCategs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/name_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Product Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/brand_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Quantitiy"
+                android:inputType="number" />
+
+            <FrameLayout
+                android:id="@+id/addImage_layout"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/cardview_dark_background">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fac_icon"/>
+
+                <ImageView
+                    android:id="@+id/crtImage_iv"
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/location_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_bg"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_ic"
+                    android:layout_marginRight="15dp"
+
+                    android:layout_gravity="center_vertical|end"/>
+                <TextView
+                    android:id="@+id/location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please give your Location"
+                    android:fontFamily="@font/roboto"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    android:paddingRight="35dp"
+                    />
+            </FrameLayout>
+
+
+
+            <Button
+                android:id="@+id/addProduct_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Add Product" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                android:id="@+id/progressbar"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

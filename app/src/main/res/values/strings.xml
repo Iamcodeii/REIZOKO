@@ -11,4 +11,13 @@
     <string name="baby_kids"><![CDATA[BABY & KIDS]]></string>
 
     <string name="map_key">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <string-array name="categs">
+    <item>Select Category</item>
+    <item>Cakes And Bakery</item>
+    <item>Fast Food</item>
+    <item>Vegetarian</item>
+    <item>Desserts</item>
+    <item>Healthy Food</item>
+    </string-array>
 </resources>
